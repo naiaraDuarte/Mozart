@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+     
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="../../css/cadastroFuncionario.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/default/materialize.min.css">
+        
+        <title>Mozart</title>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="assets/img/perfil.jpg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <div class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class='bx bx-layer nav__logo-icon'></i>
+                        <span class="nav__logo-name">Mozart</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="#" class="nav__link active">
+                        <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+                    
+                      <a href="#" class="nav__link" ><ul class="collapsible" style="box-shadow: none;">
+                        <i class='bx bx-user nav__icon'></i>
+                              <li>
+                                  <div class="collapsible-header" style="background-color: #ec407a;"><span>Users</span><i class="material-icons">arrow_drop_down</i></div>
+                                  <div class="collapsible-body"><span>Lorem ipsum</span></div>
+                                  <div class="collapsible-body"><span>Lorem ipsum</span></div>
+                                  <div class="collapsible-body"><span>Lorem ipsum</span></div>
+                                </li>
+                          </ul>
+                      </a>
+                        
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon' ></i>
+                            <span class="nav__name">Messages</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">Favorites</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-folder nav__icon' ></i>
+                            <span class="nav__name">Data</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                            <span class="nav__name">Analytics</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Cadastro de funcionários</h4>
+            <div class="conteudo">
+                <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input placeholder="Digite o primeiro nome" id="first_name" type="text" class="validate" required>
+                          <label for="first_name">Primeiro nome:</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input placeholder="Digite o sobrenome" id="last_name" type="text" class="validate" required>
+                          <label for="last_name">Sobrenome:</label>
+                        </div>
+                      </div>
+                      <div class="input-field col s6">
+                        <select>
+                          <option class="desabilitado" value="" disabled selected>Escolha uma opção</option>
+                          <option value="1">cabeleireiro(a)</option>
+                          <option value="2">Manicure/Pedicure</option>
+                          <option value="3">Maquiador(a)</option>
+                        </select>
+                        <label>Função:</label>
+                      </div> 
+                      <div class="input-field col s6">
+                        <input placeholder="Digite a data de nascimento" id="last_name" type="date" min="1950-01-01" max="2005-01-01" required>
+                        <label for="last_name">Data de nasc:</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input placeholder="Digite o telefone" id="last_name" type="text" min="1950-01-01" max="2005-01-01" required>
+                        <label for="last_name">Telefone:</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input placeholder="Digite o celular" id="last_name" type="text" min="1950-01-01" max="2005-01-01" required>
+                        <label for="last_name">Celular:</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input placeholder="Digite o nome de usuário" id="last_name" type="text" min="1950-01-01" max="2005-01-01" required>
+                        <label for="last_name">Nome de usuário:</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input placeholder="Digite uma senha padrão" id="password" type="password" class="validate">
+                        <label for="password">Senha:</label>
+                      </div>
+                      <button class="btn waves-effect waves-light right" type="submit" name="action">Salvar
+                        <i class="material-icons right">send</i>
+                      </button>
+                    </form>
+                  </div>
+                  
+            </div>
+        </div>
+        
+        <!--===== MAIN JS =====-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../../js/cadastroFuncionario.js"></script>
+        <script src="../../js/defaut/materialize.min.js"></script>
+    </body>
+</html>
