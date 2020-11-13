@@ -1,4 +1,12 @@
-$('.dropdown-trigger').dropdown();
+//$('.dropdown-trigger').dropdown();
+$('.dropdown-trigger').dropdown({ 
+    hover: true,
+    inDuration:	500,
+    coverTrigger: false,
+    constrainWidth: true
+  });
+
+
 
 /*===== SHOW NAVBAR  =====*/ 
 const showNavbar = (toggleId, navId, bodyId, headerId) =>{
@@ -52,7 +60,7 @@ $("#comCollapse").click(function() {
 });
 
 $("#comCollapse").mouseover(function(){
-
+    
 });
 
 $(".simple-dropdown").dropdown(
