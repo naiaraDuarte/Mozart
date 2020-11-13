@@ -8,9 +8,10 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
      
         <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="../../css/cadastroFuncionario.css">
+        
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="../../css/default/materialize.min.css">
+        <link rel="stylesheet" href="../../css/cadastroFuncionario.css">
         
         <title>Mozart</title>
     </head>
@@ -39,19 +40,31 @@
                             <span class="nav__name">Dashboard</span>
                         </a>
                     
-                      <a href="#" class="nav__link" style="margin-bottom: 0.3em;">
+                      <a href="#" class="nav__link simple-dropdown" id="comCollapse" style="margin-bottom: 0.3em;">
                         
-                        <ul class="collapsible" style="box-shadow: none;">
-                          
-                              <li>
+                        <ul class="collapsible" id="menuCollapse" style="box-shadow: none;">
+                              <li id="drop">
                                   <div class="collapsible-header" style="background-color: #ec407a;"><i class='bx bx-user nav__icon'></i><span>Users</span><i class="material-icons">arrow_drop_down</i></div>
                                   <div class="collapsible-body"><span>Lorem ipsum</span></div>
                                   <div class="collapsible-body"><span>Lorem ipsum</span></div>
                                   <div class="collapsible-body"><span>Lorem ipsum</span></div>
                                 </li>
-                          </ul>
+                        </ul>
+  
                       </a>
-                        
+                      <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+ <!-- Dropdown Structure -->
+ <ul id='dropdown1' class='dropdown-content'>
+   <li><a href="#!">one</a></li>
+   <li><a href="#!">two</a></li>
+   <li class="divider" tabindex="-1"></li>
+   <li><a href="#!">three</a></li>
+   <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+   <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+ </ul>
+
+                      
                         <a href="#" class="nav__link">
                             <i class='bx bx-message-square-detail nav__icon' ></i>
                             <span class="nav__name">Messages</span>
@@ -135,7 +148,7 @@
         
         <!--===== MAIN JS =====-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="../../js/cadastroFuncionario.js"></script>
         <script src="../../js/defaut/materialize.min.js"></script>
+        <script src="../../js/cadastroFuncionario.js"></script>
     </body>
 </html>

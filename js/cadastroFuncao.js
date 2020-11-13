@@ -54,10 +54,3 @@ $("#comCollapse").click(function() {
 $("#comCollapse").mouseover(function(){
 
 });
-
-$(".simple-dropdown").dropdown(
-    {
-        'closeOnClick': true,
-        'hover': true
-    }
-);
