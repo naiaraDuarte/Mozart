@@ -66,8 +66,11 @@ $("#comCollapse").click(function() {
 $("#btnFechaMenu").click(function(){
     var comCollapse = document.getElementById('comCollapse');
     var menu = document.getElementById('nav-bar');
-    console.log(comCollapse.classList[1]);
+    var logo = document.getElementById('logo');
+    var logo_nome = document.getElementById('logo_nome');
     if(menu.className == 'l-navbar'){
+        logo.classList.remove('maior');
+        logo_nome.style.display = 'none';
         $('.dropdown-trigger').dropdown({ 
             hover: true,
             inDuration:	500,
@@ -77,12 +80,12 @@ $("#btnFechaMenu").click(function(){
             onOpenEnd: null
         });
     }else{
-            $('.dropdown-trigger').dropdown({ 
-                onCloseEnd: null,
-                inDuration:	250
-            });
-        // comCollapse.dataset.target = '';
-        // comCollapse.classList.remove('dropdown-trigger');
+        logo.classList.add('maior');
+        logo_nome.style.display = 'block';
+        $('.dropdown-trigger').dropdown({ 
+            onCloseEnd: null,
+            inDuration:	250
+        });
     }
 });
 
