@@ -56,7 +56,10 @@ $("#comCollapse").click(function() {
     if(menu.className == 'l-navbar'){
         instance.close();
     }else{
-        
+        $('.dropdown-trigger').dropdown({ 
+            onCloseEnd: null,
+            inDuration:	250
+        });
     }
 });
 
@@ -74,10 +77,12 @@ $("#btnFechaMenu").click(function(){
             onOpenEnd: null
         });
     }else{
-        $('.dropdown-trigger').dropdown({ 
-            onCloseEnd: null,
-            inDuration:	250
-        })
+            $('.dropdown-trigger').dropdown({ 
+                onCloseEnd: null,
+                inDuration:	250
+            });
+        // comCollapse.dataset.target = '';
+        // comCollapse.classList.remove('dropdown-trigger');
     }
 });
 
