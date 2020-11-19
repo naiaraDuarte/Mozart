@@ -46,15 +46,32 @@ $(document).ready(function(){
     $('select').formSelect();
 });
     
-var collapsi = document.querySelector('.collapsible');
-var instance = M.Collapsible.init(collapsi, {
+var empresa = document.querySelector('.collapsible.empresa');
+var instanceEmpresa = M.Collapsible.init(empresa, {
   accordion: false
 });
-      
-$("#comCollapse").click(function() {
+
+var clientes = document.querySelector('.collapsible.clientes');
+var instanceClientes = M.Collapsible.init(clientes, {
+  accordion: false
+});
+
+$("#empresa").click(function() {
     var menu = document.getElementById('nav-bar');
     if(menu.className == 'l-navbar'){
-        instance.close();
+        instanceEmpresa.close();
+    }else{
+        $('.dropdown-trigger').dropdown({ 
+            onCloseEnd: null,
+            inDuration:	250
+        });
+    }
+});
+
+$("#clientes").click(function() {
+    var menu = document.getElementById('nav-bar');
+    if(menu.className == 'l-navbar'){
+        instanceClientes.close();
     }else{
         $('.dropdown-trigger').dropdown({ 
             onCloseEnd: null,
@@ -64,7 +81,6 @@ $("#comCollapse").click(function() {
 });
 
 $("#btnFechaMenu").click(function(){
-    var comCollapse = document.getElementById('comCollapse');
     var menu = document.getElementById('nav-bar');
     var logo = document.getElementById('logo');
     var logo_nome = document.getElementById('logo_nome');

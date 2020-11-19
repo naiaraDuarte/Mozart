@@ -134,8 +134,8 @@ a{
   left: 50%;
   font-size: 22px;
   display: none;
-  color: #e6bc53;
-  text-shadow: #ae841a 0.1em 0.1em 0.2em;
+  color: #FFF;
+  /* text-shadow: #cccccc 0.1em 0.1em 0.2em; */
 }
 
 .nav__link{
@@ -150,7 +150,7 @@ a{
 }
 
 .nav__icon{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 /*Show navbar movil*/
