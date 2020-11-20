@@ -24,3 +24,6 @@
 [1119/170827.324:ERROR:crash_report_database_win.cc(457)] unexpected header
 [1119/172327.427:ERROR:crash_report_database_win.cc(457)] unexpected header
 [1119/173203.109:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1119/174906.291:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1119/205238.796:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[1119/210238.910:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
