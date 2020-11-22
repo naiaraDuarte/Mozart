@@ -31,7 +31,8 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   transition: .5s;
-  overflow: hidden;
+  background-color: #fff;
+  /* overflow: hidden; */
 }
 
 a{
@@ -188,6 +189,9 @@ a{
 
 .content{
   margin: 10% 5%;
+  background-color: #fff;
+  box-shadow:  0 0 2em #c0c0c0;
+  padding: 2% 5%;
 }
 .conteudo{
   width: 95%;
