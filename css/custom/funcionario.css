@@ -1,0 +1,17 @@
+.excluir {
+    margin-left: 5%;
+    color: #696969;
+}
+
+.atualizar {
+    margin-right: 5%;
+    color: #ec407a;
+}
+
+.atualizar:hover{
+    color: #ad1457;
+}
+
+.excluir:hover{
+    color: black;
+}
