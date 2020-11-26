@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="../../css/default/materialize.min.css">
         <link rel="stylesheet" href="../../css/menu.css">
-        <link rel="stylesheet" href="../../css/funcionario.css">
+        <link rel="stylesheet" href="../../css/custom/funcionario.css">
         <style rel="stylesheet">
             body{
               overflow: hidden;
@@ -51,9 +51,9 @@
                         <ul class="collapsible empresa" id="menuCollapse" style="box-shadow: none;">
                               <li id="drop" class="">
                                   <div class="collapsible-header" style="background-color: #ec407a;"><i class='bx bxs-building-house nav__icon'></i><span>Empresa</span><i class="material-icons">arrow_drop_down</i></div>
-                                  <div class="collapsible-body"><span>Funcionários</span></div>
-                                  <div class="collapsible-body"><span>Funções</span></div>
-                                  <div class="collapsible-body"><span>Serviços</span></div>
+                                  <div class="collapsible-body" id="funcionario"><span>Funcionários</span></div>
+                                  <div class="collapsible-body" id="funcoes"><span>Funções</span></div>
+                                  <div class="collapsible-body" id="Serviços"><span>Serviços</span></div>
                                 </li>
                         </ul>
   
@@ -62,9 +62,9 @@
 
                       <!-- Dropdown Structure -->
                       <ul id='dropdown1' class='dropdown-content' style="left: 71px; top: 170px; background-color: #696969;">
-                        <li><a href="#!">Funcionários</a></li>
-                        <li><a href="#!">Funções</a></li>
-                        <li><a href="#!">Serviços</a></li>
+                        <li><a href="../../paginas/visualizacao/visualizacaoFuncionario.html">Funcionários</a></li>
+                        <li><a href="../../paginas/visualizacao/visualizacaoFuncoes.html">Funções</a></li>
+                        <li><a href="../../paginas/visualizacao/visualizacaoServicos.html">Serviços</a></li>
                       </ul>
 
                       
@@ -73,16 +73,16 @@
                         <ul class="collapsible clientes" id="menuCollapse" style="box-shadow: none;">
                               <li id="drop" class="">
                                   <div class="collapsible-header" style="background-color: #ec407a;"><i class='bx bx-user nav__icon'></i><span>Clientes</span><i class="material-icons">arrow_drop_down</i></div>
-                                  <div class="collapsible-body"><span>Clientes</span></div>
-                                  <div class="collapsible-body"><span>Agendamentos</span></div>
+                                  <div class="collapsible-body" id="clientes"><span>Clientes</span></div>
+                                  <div class="collapsible-body" id="agendamentos"><span>Agendamentos</span></div>
                                 </li>
                         </ul>
                         
                         
                       </a>
                       <ul id='dropdown2' class='dropdown-content' style="left: 71px; top: 200px; background-color: #696969;">
-                        <li><a href="#!">Agendamentos</a></li>
-                        <li><a href="#!">Clientes</a></li>
+                        <li><a href="../../paginas/visualizacao/visualizacaoAgendamentos.html">Agendamentos</a></li>
+                        <li><a href="../../paginas/visualizacao/visualizacaoClientes.html">Clientes</a></li>
                       </ul>
                         <a href="#" class="nav__link">
                             <i class='bx bxs-cog nav__icon' ></i>
@@ -160,6 +160,6 @@
         <script src="../../js/defaut/materialize.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
         <script src="../../js/menu.js"></script>
-        <script src="../../js/funcionario.js"></script>
+        <script src="../../js/custom/funcionario.js"></script>
     </body>
 </html>

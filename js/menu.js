@@ -104,6 +104,30 @@ $("#btnFechaMenu").click(function(){
     }
 });
 
+$(document.body).on("click", ".collapsible-body", function (ev) {
+    var buttonTrash = $(ev.target);
+    
+    var splits = buttonTrash[0].innerHTML.split('<span>')[0];
+    switch (splits) {
+        case 'Funcionários':
+            $(location).attr('href', '../../paginas/visualizacao/visualizacaoFuncionario.html');
+        break;
+        case 'Funções':
+            $(location).attr('href', '../../paginas/visualizacao/visualizacaoFuncoes.html');
+        break;
+        case 'Serviços':
+            $(location).attr('href', '../../paginas/visualizacao/visualizacaoServicos.html');
+        break;
+        case 'Clientes':
+            $(location).attr('href', '../../paginas/visualizacao/visualizacaoClientes.html');
+        break;
+        case 'Agendamentos':
+            $(location).attr('href', '../../paginas/visualizacao/visualizacaoAgendamentos.html');
+        break;
+      }
+      
+});
+
 $(".simple-dropdown").dropdown(
     {
         'closeOnClick': true,
