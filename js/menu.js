@@ -134,3 +134,7 @@ $(".simple-dropdown").dropdown(
         'hover': true
     }
 );
+
+$("#btnsalvar").click(function(){
+    $(location).attr('href', '../../paginas/visualizacao/visualizacaoFuncionario.html');
+})
