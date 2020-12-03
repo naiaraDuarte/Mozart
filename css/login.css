@@ -84,7 +84,7 @@ h1{
     font-size: 16px;
 }
 
-.loginbox input[type="submit"]
+.loginbox input[id="logar"]
 {
     border: none;
     outline: none;
@@ -94,7 +94,7 @@ h1{
     font-size: 18px;
     border-radius: 20px;
 }
-.loginbox input[type="submit"]:hover
+.loginbox input[id="logar"]:hover
 {
     cursor: pointer;
     background: #ad1457;
