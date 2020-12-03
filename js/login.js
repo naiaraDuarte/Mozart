@@ -1,5 +1,3 @@
-
-
 $("#logar").click(function(){
     var nomeUsuario = document.getElementById("nomeusuario").value;
     var senha = document.getElementById("senha").value;

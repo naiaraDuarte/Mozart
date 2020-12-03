@@ -137,4 +137,9 @@ $(".simple-dropdown").dropdown(
 
 $("#btnsalvar").click(function(){
     $(location).attr('href', '../../paginas/visualizacao/visualizacaoFuncionario.html');
-})
+});
+
+
+$("#voltar").click(function(){
+    $(location).attr('href', '../../paginas/visualizacao/visualizacaoFuncionario.html');
+});

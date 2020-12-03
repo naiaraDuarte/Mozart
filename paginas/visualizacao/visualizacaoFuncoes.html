@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+     
+        <!-- ===== CSS ===== -->
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/default/materialize.min.css">
+        <link rel="stylesheet" href="../../css/menu.css">
+        <link rel="stylesheet" href="../../css/custom/funcionario.css">
+        <link rel= "stylesheet" href="../../css/default/dataTable.css">
+        <style>
+            .body{
+                overflow-y: visible;
+            }
+            .content{
+                margin: 8% 5%;
+            }
+            label font{
+                display: none;
+            }
+            .dataTables_filter{
+                width: 500px;
+            }
+            .search{
+                font-size: 1.7rem;
+                top: 10px;
+                position: relative;
+            }
+        </style>
+        <title>Mozart</title>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle" id="btnFechaMenu">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="assets/img/perfil.jpg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <div class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                      <img src="../../img/logo.png" id="logo" class="logo" alt="">
+                        <span class="nav__logo-name" id="logo_nome">ozart</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="../../home.html" class="nav__link active">
+                        <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+                    
+                      <a href="#" class="nav__link dropdown-trigger" id="empresa" style="margin-bottom: 0.1em;" data-target='dropdown1'>
+                        
+                        <ul class="collapsible empresa" id="menuCollapse" style="box-shadow: none;">
+                              <li id="drop" class="">
+                                  <div class="collapsible-header" style="background-color: #ec407a;"><i class='bx bxs-building-house nav__icon'></i><span>Empresa</span><i class="material-icons">arrow_drop_down</i></div>
+                                  <div class="collapsible-body" id="funcionario"><span>Funcionários</span></div>
+                                  <div class="collapsible-body" id="funcoes"><span>Funções</span></div>
+                                  <div class="collapsible-body" id="Serviços"><span>Serviços</span></div>
+                                </li>
+                        </ul>
+  
+                      </a>
+                     
+
+                      <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content' style="left: 71px; top: 170px; background-color: #696969;">
+                        <li><a href="../../paginas/visualizacao/visualizacaoFuncionario.html">Funcionários</a></li>
+                        <li><a href="../../paginas/visualizacao/visualizacaoFuncoes.html">Funções</a></li>
+                        <li><a href="../../paginas/visualizacao/visualizacaoServicos.html">Serviços</a></li>
+                      </ul>
+
+                      
+                        <a href="#" class="nav__link dropdown-trigger" id="clientes" style="margin-bottom: 0.1em;" data-target='dropdown2'>
+                        
+                        <ul class="collapsible clientes" id="menuCollapse" style="box-shadow: none;">
+                              <li id="drop" class="">
+                                  <div class="collapsible-header" style="background-color: #ec407a;"><i class='bx bx-user nav__icon'></i><span>Clientes</span><i class="material-icons">arrow_drop_down</i></div>
+                                  <div class="collapsible-body" id="clientes"><span>Clientes</span></div>
+                                  <div class="collapsible-body" id="agendamentos"><span>Agendamentos</span></div>
+                                </li>
+                        </ul>
+                      </a>
+                      <ul id='dropdown2' class='dropdown-content' style="left: 71px; top: 200px; background-color: #696969;">
+                        <li><a href="../../paginas/visualizacao/visualizacaoAgendamentos.html">Agendamentos</a></li>
+                        <li><a href="../../paginas/visualizacao/visualizacaoClientes.html">Clientes</a></li>
+                      </ul>
+                        <a href="#" class="nav__link">
+                            <i class='bx bxs-cog nav__icon' ></i>
+                            <span class="nav__name">Configurações</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-file nav__icon' ></i>
+                            <span class="nav__name">Relatórios</span>
+                        </a>  
+                    </div>
+                </div>
+
+                <a href="../../login.html" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Sair</span>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <button id="btnsalvar" class="btn waves-effect waves-light right" id="voltar" type="submit" name="action">Voltar</button>
+            <h4>Está pagina está em desenvolvimento...</h4>
+            
+        </div>
+        
+        <div id="modal1" class="modal">
+            <div class="modal-content" style="text-align: center;">
+                <i class='bx bxs-error alert'></i>
+              <h5 style="font-size: 30px; top: 0px;">Atenção</h5>
+              <p>Esse funcionário será excluído permanentemente!</p>
+              <p>Deseja excluir esse funcionário?</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Excluír</a>
+            </div>
+          </div>
+        <!--===== MAIN JS =====-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../../js/defaut/materialize.min.js"></script>
+        <script src="../../js/defaut/dataTable.js"></script>
+        <script src="../../js/menu.js"></script>
+        <script src="../../js/custom/funcionario.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#example').DataTable();
+            });
+        </script>
+
+    </body>
+</html>
